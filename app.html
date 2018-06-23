@@ -3,13 +3,13 @@
 
 <head>
   {{ HEAD }}
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body {{ BODY_ATTRS }}>
   {{ APP }}
 </body>
-<script>
+<script async>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
